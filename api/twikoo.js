@@ -1,6 +1,6 @@
-// api/twikoo.js —— 正式版，兼容 Vercel + Node.js 22
-const twikoo = require('twikoo');
-
 module.exports = (req, res) => {
-  return twikoo(req, res);
+  res.json({
+    MONGODB_URI: process.env.MONGODB_URI ? '✅ 已设置' : '❌ 未设置',
+    TWIKOO_ADMIN_EMAIL: process.env.TWIKOO_ADMIN_EMAIL || '未设置'
+  });
 };
