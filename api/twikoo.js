@@ -1,7 +1,6 @@
-// 临时调试版本 —— 直接返回环境变量
+// api/twikoo.js —— 正式版，兼容 Vercel + Node.js 22
+const twikoo = require('twikoo');
+
 module.exports = (req, res) => {
-  res.json({
-    MONGODB_URI: process.env.MONGODB_URI || 'NOT_SET',
-    TWIKOO_ADMIN_EMAIL: process.env.TWIKOO_ADMIN_EMAIL || 'NOT_SET'
-  });
+  return twikoo(req, res);
 };
