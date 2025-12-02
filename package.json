@@ -1,6 +1,7 @@
 {
   "name": "twikoo-official",
   "version": "1.0.0",
+  "type": "commonjs",        // 👈 显式指定为 CommonJS
   "dependencies": {
     "twikoo": "^1.6.44"
   },
