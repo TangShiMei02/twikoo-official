@@ -1,4 +1,1 @@
-const twikoo = require('twikoo');
-module.exports = (req, res) => {
-  return twikoo(req, res);
-};
+module.exports = require('twikoo/dist/twikoo.node.js')
