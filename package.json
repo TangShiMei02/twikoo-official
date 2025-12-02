@@ -1,11 +1,6 @@
 {
   "name": "twikoo-official",
   "version": "1.0.0",
-  "description": "Twikoo comment system on Vercel with MongoDB",
-  "main": "api/twikoo.js",
-  "scripts": {
-    "start": "vercel dev"
-  },
   "dependencies": {
     "twikoo": "^1.6.44"
   },
